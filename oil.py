@@ -106,7 +106,7 @@ ibov_1y = round(((ibov_now / ibov_prices_1y_ago) - 1) * 100, 2)
 cotacoes = 	{
 		'Ticker': ['Brent', 'Real/US$', 'Ibovespa'],
 		'Cotação': [oil_now, fx_now, ibov_now],
-		'Var. Dia %': [oil_ day, fx_day, ibov_day],
+		'Var. Dia %': [oil_day, fx_day, ibov_day],
 		'Var. Mês %': [oil_1m, fx_1m, ibov_1m],
 		'Var. Ano %': [oil_ytd, fx_ytd, ibov_ytd],
 		'Var. 12m %': [oil_1y, fx_1y, ibov_1y]
