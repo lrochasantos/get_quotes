@@ -112,9 +112,6 @@ cotacoes = 	{
 			'Var. 12m %': [oil_1y, fx_1y, ibov_1y]
 			} 
 
-df = pd.DataFrame(cotacoes)
-df.set_index('Ticker')
 st.write(today_formatted)
-#st.table(cotacoes)
-df
+st.table(cotacoes)
 st.write('Fonte: Yahoo Finance')
