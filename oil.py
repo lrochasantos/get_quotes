@@ -112,7 +112,7 @@ cotacoes = 	{
 			'Var. 12m %': [oil_1y, fx_1y, ibov_1y]
 			} 
 
-df = pd.Dataframa(cotacoes)
+df = pd.DataFrame(cotacoes)
 st.write(today_formatted)
 #st.table(cotacoes)
 df
