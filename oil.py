@@ -112,6 +112,7 @@ cotacoes = 	{
 			'Var. 12m %': [oil_1y, fx_1y, ibov_1y]
 			} 
 
+st.write('Cotações:')
 st.write(today_formatted)
 st.table(cotacoes)
 st.write('Fonte: Yahoo Finance')
