@@ -18,11 +18,9 @@ current_hour = current_time[11:13]
 
 oil_now = round(si.get_live_price('BZ=F'), 2)
 
-oil_prices_1d_ago = si.get_quote_table('BZ=F')['Previous Close']
-
-oil_prices_1d_ago = round(oil_prices_1d_ago, 2)
-
 oil_ticker = yf.Ticker('BZ=F')
+
+oil_prices_1d_ago = oil_ticker.info['previousClose']
 
 oil_prices_1mo = oil_ticker.history(period='1mo')
 oil_prices_1mo_ago = oil_prices_1mo.iloc[0,3]
