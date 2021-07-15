@@ -18,7 +18,9 @@ current_hour = current_time[11:13]
 
 oil_now = round(si.get_live_price('BZ=F'), 2)
 
-oil_prices_1d_ago = round(si.get_quote_table('BZ=F'), 2)['Previous Close']
+oil_prices_1d_ago = si.get_quote_table('BZ=F')['Previous Close']
+
+oil_prices_1d_ago = round(oil_prices_1d_ago, 2)
 
 oil_ticker = yf.Ticker('BZ=F')
 
@@ -47,7 +49,9 @@ oil_1y = round(((oil_now / oil_prices_1y_ago) - 1) * 100, 2)
 
 fx_now = round(si.get_live_price('BRL=X'), 2)
 
-fx_prices_1d_ago = round(si.get_quote_table('BRL=X'), 2)['Previous Close']
+fx_prices_1d_ago = si.get_quote_table('BRL=X')['Previous Close']
+
+fx_prices_1d_ago = round(fx_prices_1d_ago, 2)
 
 fx_ticker = yf.Ticker('BRL=X')
 
@@ -76,7 +80,9 @@ fx_1y = round(((fx_now / fx_prices_1y_ago) - 1) * 100, 2)
 
 ibov_now = round(si.get_live_price('^BVSP'), 0)
 
-ibov_prices_1d_ago = round(si.get_quote_table('^BVSP'), 0)['Previous Close']
+ibov_prices_1d_ago = si.get_quote_table('^BVSP')['Previous Close']
+
+ibov_prices_1d_ago = round(ibov_prices_1d_ago, 2)
 
 ibov_ticker = yf.Ticker('^BVSP')
 
