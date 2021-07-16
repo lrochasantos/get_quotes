@@ -1,4 +1,4 @@
-yahoo_fin==0.8.9
+yahoo_fin==0.8.9.1
 pandas==1.2.4
 streamlit==0.82.0
 yfinance==0.1.63
